@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="loc0"></string>
+    <string name="loc1"></string>
+    <string name="loc2"></string>
+    <string name="loc3"></string>
+    <string name="loc4"></string>
+    <string name="loc5"></string>
+    <string name="loc6"></string>
+    <string name="loc7"></string>
+    <string name="loc8"></string>
+
+    <string name="rules">The goal of Tic-Tac-Toe is to get three in a row.
+        You will take turns placing either an X or an O.
+        If you manage to get three of your symbol in a row, you win!</string>
+    <string name="name_hint">Name</string>
+    <string name="currentPlayer"></string>
+</resources>
