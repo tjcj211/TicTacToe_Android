@@ -1,9 +1,10 @@
-
+/*
+ * Timothy Carta
+ * 2/14/2020
+ * Used to create and update board for TicTacToe game.
+ */
 
 package edu.quinnipiac.ser210.tictactoe;
-
-import android.os.Parcel;
-import android.os.Parcelable;
 
 public class TicTacToe implements ITicTacToe {
 
@@ -20,6 +21,7 @@ public class TicTacToe implements ITicTacToe {
         currentPlayer = 1;
     }
 
+    //Makes all values on board equal to EMPTY
     @Override
     public void clearBoard() {
         for (int r = 0; r < ROWS; r++) {
@@ -60,6 +62,7 @@ public class TicTacToe implements ITicTacToe {
         return true; //Board is full
     }
 
+    //Returns the constant for the symbol at the given location
     public int getSymbolAtLocation(int location) {
         int row = location / 3;
         int col = location % 3;
@@ -77,7 +80,7 @@ public class TicTacToe implements ITicTacToe {
             case 2: //O - Player 0
                 return 0;
         }
-        return -1;
+        return -1; //No player at location
     }
 
 
@@ -144,10 +147,6 @@ public class TicTacToe implements ITicTacToe {
         }
     }
 
-    public int[][] getBoard() {
-        return board;
-    }
-
     public int getCurrentPlayer() { //Return the current player
         return currentPlayer;
     }
@@ -156,6 +155,9 @@ public class TicTacToe implements ITicTacToe {
         currentPlayer = player;
     }
 
+    /*
+     * Returns if move at given location is valid
+     */
     public boolean isValidMove(int location) {
         int row = location / 3; //Which row
         int col = location % 3; //Which column

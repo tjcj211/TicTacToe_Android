@@ -6,7 +6,6 @@
 
 package edu.quinnipiac.ser210.tictactoe;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

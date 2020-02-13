@@ -1,3 +1,9 @@
+/*
+ * ITicTacToe interface.
+ * @author relkharboutly
+ * @date 1/5/2017
+ */
+
 package edu.quinnipiac.ser210.tictactoe;
 
 public interface ITicTacToe {
